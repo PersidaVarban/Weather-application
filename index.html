@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/forecast.css">
+    <script src="scripts/index.js"></script>
+</head>
+<body>
+   <h1>Weather App</h1>
+   <div class="card" id="root">
+    <div class="search">
+        <input type="text" placeholder="Enter city name" spellcheck="false">
+        <button><img src="photos/search-button.jpg" alt="Search button"></button>
+        <datalist id="list"></datalist>
+        <div class="loader" id="loader"></div>
+    </div>
+    <div class="weather">
+        <img src="photos/rain.png" alt="Rain" class="weather-icon">
+        <h2 class="temp">Temperature</h2>
+        <h2 class="city">City</h2>
+        <button class="heart-button">
+            <span class="heart"></span>
+        </button>
+        <h3 class="weather-text">Text</h3>
+        <div class="details">
+            <div class="col">
+                <img src="photos/humidity.png">
+                <div>
+                    <p class="humidity">50%</p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="photos/wind.png">
+                <div>
+                    <p class="wind">15 km/h</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="days-forecast">
+     <h2>4-Day Forecast</h2> 
+     <ul class="weather-cards">
+        <li class="cards">
+            <h2 class="day1">day1</h2>
+            <img src="photos/rain.png" alt="Rain" class="weather-icon1">
+            <div class="temp1">Temperature</div>
+            <div class="weather-text1">Text</div>
+            <div class="humidity1">humidity</div>
+            <div class="wind1">wind</div>
+        </li>
+        <li class="cards">
+            <h2 class="day2">day2</h2>
+            <img src="photos/rain.png" alt="Rain" class="weather-icon2">
+            <div class="temp2">Temperature</div>
+            <div class="weather-text2">Text</div>
+            <div class="humidity2">humidity</div>
+            <div class="wind2">wind</div>
+        </li>
+        <li class="cards">
+            <h2 class="day3">day3</h2>
+            <img src="photos/rain.png" alt="Rain" class="weather-icon3">
+            <div class="temp3">Temperature</div>
+            <div class="weather-text3">Text</div>
+            <div class="humidity3">humidity</div>
+            <div class="wind3">wind</div>
+        </li>
+        <li class="cards">
+            <h2 class="day4">day4</h2>
+            <img src="photos/rain.png" alt="Rain" class="weather-icon4">
+            <div class="temp4">Temperature</div>
+            <div class="weather-text4">Text</div>
+            <div class="humidity4">humidity</div>
+            <div class="wind4">wind</div>
+        </li>
+     </ul> 
+    </div>
+    <div class="favourite-list">
+        <h2>Favorite cities</h2>
+        <ul id="fav-list"></ul>
+    </div>
+</body>
+</html>

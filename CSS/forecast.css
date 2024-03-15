@@ -1,0 +1,48 @@
+.days-forecast h2{
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.weather-cards{
+    display: flex;
+    gap: 30px;
+}
+
+.weather-cards .cards{
+    margin-left: 15px;
+    list-style: none;
+    color: black;
+    padding: 24px 22px;
+    border-radius: 5px;
+    background: lightblue;
+    width: calc(100% / 5);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.weather-cards .cards .weather-icon1, 
+.weather-cards .cards .weather-icon2,
+.weather-cards .cards .weather-icon3,
+.weather-cards .cards .weather-icon4{
+    max-width: 70px;
+    margin: 5px 0 -12px 0;
+}
+
+.weather-cards .cards .day1,
+.weather-cards .cards .day2,
+.weather-cards .cards .day3,
+.weather-cards .cards .day4 {
+    font: bold;
+    font-size: 15px;
+}
+
+.weather-cards .cards .temp1,
+.weather-cards .cards .temp2,
+.weather-cards .cards .temp3,
+.weather-cards .cards .temp4{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.days-forecast{
+    display: none;
+}
